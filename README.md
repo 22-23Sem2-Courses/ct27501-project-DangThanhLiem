@@ -2,15 +2,15 @@
 
 Học kỳ 2, Năm học 2022-2023
 
-**MSSV 1** : 
+**MSSV 1** : B2014580
 
-**Họ tên SV 1**:
+**Họ tên SV 1**: Đặng Thanh Liêm
 
-**MSSV 2**:
+**MSSV 2**: B2014594
 
-**Họ tên SV 2**:
+**Họ tên SV 2**: Đỗ Huỳnh Như
 
-**Lớp học phần**:
+**Lớp học phần**: CT27501
 
-**Tên dự án**:
+**Tên dự án**: Cửa hàng bán quần áo
 
