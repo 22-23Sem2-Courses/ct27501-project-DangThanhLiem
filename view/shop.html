@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <link rel="stylesheet" href="../css/all.min.css">
+
+
+    <title>Fashion</title>
+    
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-dark py-2 px-xl-5">
+            <div class="col-lg-10 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white" href="">FAQs</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-white" href="">Help</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-white" href="">Support</a>
+                </div>
+            </div>
+            <div class="col-lg-2 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center m-0">
+            <div class="col-lg-2 d-none d-lg-block">
+                <img src="../img/logo.png" style="width: 100px; height: 60px; ">
+            </div>
+            <div class="col-lg-8 col-6 text-left">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark me-2" type="submit">  <i class="fa fa-search"></i></button>
+                    <a href="#" class="btn btn-outline-dark  ">
+                        <i class="fas fa-shopping-cart text-dark"></i>
+                    </a>
+                </form>
+            </div>
+            <div class="col-lg-2 col-3 d-flex text-start">
+                <a href="">
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a style="color: black;" class="nav-link" href="#">Login</a>
+                    </li>
+                  </ul>
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a style="color: black;" class="nav-link" href="#">Register</a>
+                    </li>
+                  </ul>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end header -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3" style="margin-top: 34px;" >
+          <div class="list-group" style="" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" style="background-color: dimgrey;" id="list-dress-list" data-bs-toggle="list" href="#list-dress" role="tab" aria-controls="list-dress">DRESS</a>
+            <a class="list-group-item list-group-item-action" style="background-color: dimgrey;" id="list-shirt-list" data-bs-toggle="list" href="#list-shirt" role="tab" aria-controls="list-shirt">SHIRT</a>
+            <a class="list-group-item list-group-item-action" style="background-color: dimgrey;" id="list-blazers-list" data-bs-toggle="list" href="#list-blazers" role="tab" aria-controls="list-blazers">BLAZERS</a>
+            <a class="list-group-item list-group-item-action" style="background-color: dimgrey;" id="list-jeans-list" data-bs-toggle="list" href="#list-jeans" role="tab" aria-controls="list-jeans">JEANS</a>
+            <a class="list-group-item list-group-item-action" style="background-color: dimgrey;" id="list-skirt-list" data-bs-toggle="list" href="#list-skirt" role="tab" aria-controls="list-skirt">SKIRT</a>
+            <a class="list-group-item list-group-item-action" style="background-color: dimgrey;" id="list-jacket-list" data-bs-toggle="list" href="#list-jacket" role="tab" aria-controls="list-jacket">JACKET</a>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-dress" role="tabpanel" aria-labelledby="list-dress-list">
+                <!-- DRESS -->
+                <h5 class="text-bg-dark " style="text-align: center; border-radius: 5px; border: inset;" >
+                  DRESS
+                </h5>
+                <div class="">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <!-- SP1 -->
+                    <div class="col">
+
+                      <div class="card h-100">
+                        <img src="../img/product/d-1.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">WHITE PARTY DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                              ORDER
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:white party dress
+                                    </p>
+                                    <p>
+                                      Chất liệu:Vải kate
+                                    </p>
+                                    <p>
+                                      Màu:Trắng
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$120</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp1 -->
+
+                     <!-- SP2 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/d-2.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">BLACK BASIC PARTY  DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:black basic party dress
+                                    </p>
+                                    <p>
+                                      Chất liệu:cotton
+                                    </p>
+                                    <p>
+                                      Màu:Đen
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$100</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp12 -->
+
+
+                     <!-- SP3 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/d-3.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">BLACK MYSTICS DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                              ORDER
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm: Black mystics dress
+                                    </p>
+                                    <p>
+                                      Chất liệu:cotton                                    </p>
+                                    <p>
+                                      Màu:Đen
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$120</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp3 -->
+
+                     <!-- SP4 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/d-4.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">LONG DRESS WHITE</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:Long dress white
+                                    </p>
+                                    <p>
+                                      Chất liệu:voan nhúng
+                                    </p>
+                                    <p>
+                                      Màu:Trắng ngà
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$75</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp4 -->
+
+
+
+                     <!-- SP5 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/d-5.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">BODY 2-WIRE DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:Body 2-wire
+                                    </p>
+                                    <p>
+                                      Chất liệu:Len gân
+                                    </p>
+                                    <p>
+                                      Màu:Trắng
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$60</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp4 -->
+
+                     <!-- SP5 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/d-6.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">LONG DRESS WHITE</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:Long dress white
+                                    </p>
+                                    <p>
+                                      Chất liệu:voan nhúng
+                                    </p>
+                                    <p>
+                                      Màu:Trắng
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$110</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp5 -->
+                  </div>
+                </div>
+             </div>
+
+
+              <div class="tab-pane fade" id="list-shirt" role="tabpanel" aria-labelledby="list-shirt-list">
+                  <h5 class="text-bg-dark " style="text-align: center; border-radius: 5px; border: inset;" >
+                    SHIRTS
+                  </h5>
+                  <div class="">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                      <!-- SP1 -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <img src="../img/product/s-1.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                          <div class="card-body ">
+                            <h6 class="card-title me-3">SHIRT VITAGES </h6>
+                          </div>
+                          <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                            <!-- Button trigger modal -->
+                              <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#s-1">
+                                ORDER
+                              </button>
+
+                              <!-- Modal -->
+                              <div class="modal fade" id="s-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog w-25">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>
+                                        Tên sản phẩm:Shirt vitages
+                                      </p>
+                                      <p>
+                                        Chất liệu:phi bóng
+                                      </p>
+                                      <p>
+                                        Màu:Trắng ngà
+                                      </p>
+                                      <p>
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-dark">ORDER</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$21</small></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End sp1 -->
+
+                      <!-- SP2 -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <img src="../img/product/s-2.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                          <div class="card-body ">
+                            <h6 class="card-title me-3">LONG SLEEVE SHIRT</h6>
+                          </div>
+                          <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                            <!-- Button trigger modal -->
+                              <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#s-2">
+                                ORDER
+                              </button>
+                              <!-- Modal -->
+                              <div class="modal fade" id="s-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog w-25">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>
+                                        Tên sản phẩm:Long sleeve shirt
+                                      </p>
+                                      <p>
+                                        Chất liệu:cotton
+                                      </p>
+                                      <p>
+                                        Màu:nâu nhạt
+                                      </p>
+                                      
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-dark">ORDER</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$36</small></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End sp12 -->
+
+
+                      <!-- SP3 -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <img src="../img/product/s-3.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                          <div class="card-body ">
+                            <h6 class="card-title me-3">SHIRT BASIC</h6>
+                          </div>
+                          <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                            <!-- Button trigger modal -->
+                              <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#s-3">
+                                ORDER
+                              </button>
+
+                              <!-- Modal -->
+                              <div class="modal fade" id="s-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog w-25">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>
+                                        Tên sản phẩm: Shirt basic
+                                      </p>
+                                      <p>
+                                        Chất liệu:Lụa
+                                      </p>
+                                      <p>
+                                        Màu:Hồng pastel
+                                      </p>
+                                      
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-dark">ORDER</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$23</small></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End sp3 -->
+
+                      <!-- SP4 -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <img src="../img/product/s-4.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                          <div class="card-body ">
+                            <h6 class="card-title me-3">STRIPED SHIRT</h6>
+                          </div>
+                          <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                            <!-- Button trigger modal -->
+                              <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#s-4">
+                                ORDER
+                              </button>
+                              <!-- Modal -->
+                              <div class="modal fade" id="s-4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog w-25">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>
+                                        Tên sản phẩm:Striped shirt
+                                      </p>
+                                      <p>
+                                        Chất liệu:kate
+                                      </p>
+                                      <p>
+                                        Màu:Trắng,xám
+                                      <p>
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-dark">ORDER</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$35</small></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End sp4 -->
+
+
+
+                      <!-- SP5 -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <img src="../img/product/s-5.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                          <div class="card-body ">
+                            <h6 class="card-title me-3">SHORT SLEEVE SHIRT</h6>
+                          </div>
+                          <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                            <!-- Button trigger modal -->
+                              <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#s-5">
+                                ORDER
+                              </button>
+                              <!-- Modal -->
+                              <div class="modal fade" id="s-5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog w-25">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>
+                                        Tên sản phẩm:Short sleeve shirt
+                                      </p>
+                                      <p>
+                                        Chất liệu:Linen
+                                      </p>
+                                      <p>
+                                        Màu:Trắng ngà
+                                      </p>
+                                      <p>
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-dark">ORDER</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$55</small></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End sp4 -->
+
+                      <!-- SP6 -->
+                      <div class="col">
+                        <div class="card h-100">
+                          <img src="../img/product/s-6.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                          <div class="card-body ">
+                            <h6 class="card-title me-3">STYLE SHIRT</h6>
+                          </div>
+                          <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                            <!-- Button trigger modal -->
+                              <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#s-6">
+                                ORDER
+                              </button>
+                              <!-- Modal -->
+                              <div class="modal fade" id="s-6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog w-25">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>
+                                        Tên sản phẩm:Style shirt
+                                      </p>
+                                      <p>
+                                        Chất liệu:voan gân
+                                      </p>
+                                      <p>
+                                        Màu:vàng nhạt
+                                      </p>
+                                      <p>
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-dark">ORDER</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$45</small></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End sp5 -->
+                  </div>
+                </div>
+              </div>
+            <div class="tab-pane fade" id="list-blazers" role="tabpanel" aria-labelledby="list-blazers-list">
+                <!-- BLAZERS -->
+                <h5 class="text-bg-dark " style="text-align: center; border-radius: 5px; border: inset;" >
+                  BLAZERS
+                </h5>
+                <div class="">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- SP1 -->
+                    <div class="col">
+
+                      <div class="card h-100">
+                        <img src="../img/product/b-1.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">WHITE PARTY DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#b-1">
+                              ORDER
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="b-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:white party dress
+                                    </p>
+                                    <p>
+                                      Chất liệu:Vải kate
+                                    </p>
+                                    <p>
+                                      Màu:Trắng
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$120</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp1 -->
+
+                     <!-- SP2 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/b-2.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">BLACK BASIC PARTY  DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#b-2">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="b-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:black basic party dress
+                                    </p>
+                                    <p>
+                                      Chất liệu:cotton
+                                    </p>
+                                    <p>
+                                      Màu:Đen
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$100</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp12 -->
+
+
+                     <!-- SP3 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/b-3.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">BLACK MYSTICS DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#b-3">
+                              ORDER
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="b-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm: Black mystics dress
+                                    </p>
+                                    <p>
+                                      Chất liệu:cotton                                    </p>
+                                    <p>
+                                      Màu:Đen
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$120</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp3 -->
+
+                     <!-- SP4 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/b-4.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">LONG DRESS WHITE</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#b-4">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="b-4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:Long dress white
+                                    </p>
+                                    <p>
+                                      Chất liệu:voan nhúng
+                                    </p>
+                                    <p>
+                                      Màu:Trắng ngà
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$75</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp4 -->
+
+
+
+                     <!-- SP5 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/b-5.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">BODY 2-WIRE DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#b-5">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="b-5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:Body 2-wire
+                                    </p>
+                                    <p>
+                                      Chất liệu:Len gân
+                                    </p>
+                                    <p>
+                                      Màu:Trắng
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$60</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp4 -->
+
+                     <!-- SP5 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/b-6.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">LONG DRESS WHITE</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#b-6">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="b-6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:Long dress white
+                                    </p>
+                                    <p>
+                                      Chất liệu:voan nhúng
+                                    </p>
+                                    <p>
+                                      Màu:Trắng
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$110</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp5 -->
+                </div>
+              </div>
+
+
+
+
+
+
+
+            </div>
+            <div class="tab-pane fade" id="list-jeans" role="tabpanel" aria-labelledby="list-jeans-list">
+                <!-- JEANS -->
+                <h5 class="text-bg-dark " style="text-align: center; border-radius: 5px; border: inset;" >
+                  JEANS
+                </h5>
+                <div class="">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <!-- SP1 -->
+                    <div class="col">
+
+                      <div class="card h-100">
+                        <img src="../img/product/j-1.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">WHITE PARTY DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#j-1">
+                              ORDER
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="j-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:white party dress
+                                    </p>
+                                    <p>
+                                      Chất liệu:Vải kate
+                                    </p>
+                                    <p>
+                                      Màu:Trắng
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$120</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp1 -->
+
+                     <!-- SP2 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/j-2.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">BLACK BASIC PARTY  DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#j-2">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="j-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:black basic party dress
+                                    </p>
+                                    <p>
+                                      Chất liệu:cotton
+                                    </p>
+                                    <p>
+                                      Màu:Đen
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$100</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp12 -->
+
+
+                     <!-- SP3 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/j-3.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">BLACK MYSTICS DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#j-3">
+                              ORDER
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="j-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm: Black mystics dress
+                                    </p>
+                                    <p>
+                                      Chất liệu:cotton                                    </p>
+                                    <p>
+                                      Màu:Đen
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$120</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp3 -->
+
+                     <!-- SP4 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/j-4.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">LONG DRESS WHITE</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#j-4">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="j-4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:Long dress white
+                                    </p>
+                                    <p>
+                                      Chất liệu:voan nhúng
+                                    </p>
+                                    <p>
+                                      Màu:Trắng ngà
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$75</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp4 -->
+
+
+
+                     <!-- SP5 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/j-5.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">BODY 2-WIRE DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#j-5">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="j-5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:Body 2-wire
+                                    </p>
+                                    <p>
+                                      Chất liệu:Len gân
+                                    </p>
+                                    <p>
+                                      Màu:Trắng
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$60</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp4 -->
+
+                     <!-- SP5 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/j-6.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">LONG DRESS WHITE</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#j-6">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="j-6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:Long dress white
+                                    </p>
+                                    <p>
+                                      Chất liệu:voan nhúng
+                                    </p>
+                                    <p>
+                                      Màu:Trắng
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$110</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp5 -->
+                </div>
+              </div>
+
+
+
+            </div>
+            <div class="tab-pane fade" id="list-skirt" role="tabpanel" aria-labelledby="list-skirt-list">
+                <!-- SKIRT -->
+                <h5 class="text-bg-dark " style="text-align: center; border-radius: 5px; border: inset;" >
+                  SKIRT
+                </h5>
+                <div class="">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- SP1 -->
+                    <div class="col">
+
+                      <div class="card h-100">
+                        <img src="../img/product/k-1.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">WHITE PARTY DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#k-1">
+                              ORDER
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="k-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:white party dress
+                                    </p>
+                                    <p>
+                                      Chất liệu:Vải kate
+                                    </p>
+                                    <p>
+                                      Màu:Trắng
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$120</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp1 -->
+
+                     <!-- SP2 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/k-2.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">BLACK BASIC PARTY  DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#k-2">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="k-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:black basic party dress
+                                    </p>
+                                    <p>
+                                      Chất liệu:cotton
+                                    </p>
+                                    <p>
+                                      Màu:Đen
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$100</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp12 -->
+
+
+                     <!-- SP3 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/k-3.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">BLACK MYSTICS DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#k-3">
+                              ORDER
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="k-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm: Black mystics dress
+                                    </p>
+                                    <p>
+                                      Chất liệu:cotton
+                                    </p>
+                                    <p>
+                                      Màu:Đen
+                                    </p>
+                                   
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$120</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp3 -->
+
+                     <!-- SP4 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/k-4.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">LONG DRESS WHITE</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#k-4">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="k-4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:Long dress white
+                                    </p>
+                                    <p>
+                                      Chất liệu:voan nhúng
+                                    </p>
+                                    <p>
+                                      Màu:Trắng ngà
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$75</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp4 -->
+
+
+
+                     <!-- SP5 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/k-5.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">BODY 2-WIRE DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#k-5">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="k-5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:Body 2-wire
+                                    </p>
+                                    <p>
+                                      Chất liệu:Len gân
+                                    </p>
+                                    <p>
+                                      Màu:Trắng
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$60</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp4 -->
+
+                     <!-- SP5 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/k-6.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">LONG DRESS WHITE</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#k-6">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="k-6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:Long dress white
+                                    </p>
+                                    <p>
+                                      Chất liệu:voan nhúng
+                                    </p>
+                                    <p>
+                                      Màu:Trắng
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$110</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp5 -->
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="tab-pane fade" id="list-jacket" role="tabpanel" aria-labelledby="list-jacket-list">
+                <!-- JACKET -->
+                <h5 class="text-bg-dark " style="text-align: center; border-radius: 5px; border: inset;" >
+                  JACKET
+                </h5>
+                <div class="">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <!-- SP1 -->
+                    <div class="col">
+
+                      <div class="card h-100">
+                        <img src="../img/product/jk-1.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">WHITE PARTY DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#jk-1">
+                              ORDER
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="jk-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:white party dress
+                                    </p>
+                                    <p>
+                                      Chất liệu:Vải kate
+                                    </p>
+                                    <p>
+                                      Màu:Trắng
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$120</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp1 -->
+
+                     <!-- SP2 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/jk-2.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">BLACK BASIC PARTY  DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#jk-2">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="jk-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:black basic party dress
+                                    </p>
+                                    <p>
+                                      Chất liệu:cotton
+                                    </p>
+                                    <p>
+                                      Màu:Đen
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$100</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp12 -->
+
+
+                     <!-- SP3 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/jk-3.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">BLACK MYSTICS DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#jk-3">
+                              ORDER
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="jk-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm: Black mystics dress
+                                    </p>
+                                    <p>
+                                      Chất liệu:cotton                                    </p>
+                                    <p>
+                                      Màu:Đen
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$120</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp3 -->
+                     <!-- SP4 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/jk-4.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">LONG DRESS WHITE</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#jk-4">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="jk-4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:Long dress white
+                                    </p>
+                                    <p>
+                                      Chất liệu:voan nhúng
+                                    </p>
+                                    <p>
+                                      Màu:Trắng ngà
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$75</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp4 -->
+                     <!-- SP5 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/jk-5.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">BODY 2-WIRE DRESS</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#jk-5">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="jk-5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:Body 2-wire
+                                    </p>
+                                    <p>
+                                      Chất liệu:Len gân
+                                    </p>
+                                    <p>
+                                      Màu:Trắng
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$60</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp4 -->
+                     <!-- SP5 -->
+                     <div class="col">
+                      <div class="card h-100">
+                        <img src="../img/product/jk-6.jpg" class=" ptc card-img-top " style="height: 350px;" alt="...">
+                        <div class="card-body ">
+                          <h6 class="card-title me-3">LONG DRESS WHITE</h6>
+                        </div>
+                        <div class="card-footer d-flex row" style="padding: 0px;margin: unset;">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn col-auto me-auto" data-bs-toggle="modal" data-bs-target="#jk-6">
+                              ORDER
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="jk-6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog w-25">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông tin sản phẩm</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>
+                                      Tên sản phẩm:Long dress white
+                                    </p>
+                                    <p>
+                                      Chất liệu:voan nhúng
+                                    </p>
+                                    <p>
+                                      Màu:Trắng
+                                    </p>
+                                    <p>
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-dark">ORDER</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="col-auto" style="padding-top: 7px;"><small class=" text-body-secondary" >$110</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End sp5 -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid m-3  bg-dark">
+      <div class="row align-items-start">
+        <div class="col ">
+          <h5 class="text-white " style="margin-top: 15px; margin-bottom: 15px;"> 
+            THÔNG TIN
+          </h5>
+          
+          <div class="">
+            <p class="mb-2 text-white"><i class="fa fa-map-marker-alt text-white mr-3 me-2"></i>Hẻm672,30/4,Hưng Lợi-Ninh Kiều.</p>
+            <p class="mb-2 text-white"><i class="fa fa-envelope text-white mr-3 me-2"></i>nhub2014594@student.ctu.edu.vn</p>
+            <p class="mb-0 text-white"><i class="fa fa-phone-alt text-white mr-3 me-2"></i>0846316361</p>      
+          </div> 
+        </div>
+
+
+
+        <div class="col">
+          <h5 class="text-white " style="margin-top: 15px; margin-bottom: 15px;"> 
+            LIÊN HỆ
+          </h5>
+          <p class="mb-2 text-white"> <i class="fab fa-facebook-f text-white mr-3 me-2"></i>https://www.facebook.com/</p>
+          <p class="mb-2 text-white"><i class="fab fa-twitter text-white mr-3 me-2"></i>https://twitter.com/</p>
+          <p class="mb-0 text-white"> <i class="fab fa-instagram text-white mr-3 me-2"></i>https://www.instagram.com/</p>     
+         </div>
+        <div class="col">
+          <h5 class="text-white" style="margin-top: 15px; margin-bottom: 15px;">
+            QUICKS LINK
+          </h5>
+          <a href="" class="text-white d-flex nav-link mr-3 me-2">HOME</a>
+          <a href="" class="text-white d-flex nav-link mr-3 me-2">PRODUCT</a>
+          <a href="" class="text-white d-flex nav-link mr-3 me-2">CONTRACT</a>
+          <a href="" class="text-white d-flex nav-link mr-3 me-2">ABOUT</a>
+          
+        </div>
+      </div>
+
+    </footer>
+
+  
+      
+    </script>
+
+    
+
+</body>
+</html>
