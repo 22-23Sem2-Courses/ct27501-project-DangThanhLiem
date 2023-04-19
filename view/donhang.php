@@ -92,23 +92,23 @@
                             <td><strong>Phương thức thanh toán </strong><br>
 
                                 <?php
-                                var_dump($orderinfo[0]['pttt']);
+                                // var_dump($orderinfo[0]['pttt']);
                                 switch ($orderinfo[0]['pttt']) {
                                     case '1':
-                                        $txtmess = "Thanh toán khi nhận hàng";
+                                        echo "Thanh toán khi nhận hàng";
                                         break;
                                     case '2':
-                                        $txtmess = "Thanh toán chuyển khoản";
+                                        echo "Thanh toán chuyển khoản";
                                         break;
                                     case '3':
-                                        $txtmess = "Thanh toán ví MoMo";
+                                        echo "Thanh toán ví MoMo";
                                         break;
                                     case '4':
-                                        $txtmess = "Thanh toán Online";
+                                        echo "Thanh toán Online";
                                         break;
 
                                     default:
-                                        $txtmess = "Quý khách chưa chọn ...";
+                                        echo "Quý khách chưa chọn ...";
                                         break;
                                 }
                                 ?>
