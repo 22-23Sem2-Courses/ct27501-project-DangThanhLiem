@@ -18,7 +18,7 @@ function checkuser($user, $pass)
 {
     $conn = connectDB();
     $stmt = $conn->prepare("SELECT * FROM tbl_user WHERE user=? AND pass=?");
-    $stmt->execute([$user, $user]);
+    $stmt->execute([$user, $pass]);
     $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
     $kq = $stmt->fetchAll();
     if (count($kq) > 0)
