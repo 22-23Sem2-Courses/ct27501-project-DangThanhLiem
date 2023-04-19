@@ -71,7 +71,7 @@
                        </div>
                        <div class="col-md-2 col-lg-2 col-xl-2">
   
-                         <td><a href="index.php?act=delcart&i=' . $i . '" class="text-white"><i class="fas fa-trash fa-lg"></i></a></td>
+                         <td><a href="index.php?act=delcart&i=<?php echo $i+1 ?>" class="text-white"><i class="fas fa-trash fa-lg"></i></a></td>
                        </div>
                       
                        
