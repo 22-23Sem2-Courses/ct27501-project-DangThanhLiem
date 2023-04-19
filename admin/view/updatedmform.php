@@ -5,30 +5,30 @@
         <?php
         //  echo var_dump($kqone);
         ?>
-        <form action="index.php?act=updatedmform" method="post" enctype="multipart/form-data" style="text-align: end; display:flex;" class="row">
+        <form action="index.php?act=danhmuc_update" method="post" enctype="multipart/form-data"
+            style="text-align: end; display:flex;" class="row">
             <div class="col me-2">
-                <input  class="form-control" type="text" name="tendm" value="<?= $kqone[0]['tendm'] ?>">
+                <input class="form-control" type="text" name="tendm" value="<?= $kqone[0]['tendm'] ?>">
             </div>
             <div class="col me-2">
-              
-                <input  class="form-control" type="file" name="img" value="<?= $kqone[0]['img'] ?>">
+
+                <input class="form-control" type="file" name="img" value="<?= $kqone[0]['img'] ?>">
             </div>
             <div class="col me-2">
-      
-                <input  class="form-control" type="hidden" name="id" value="<?= $kqone[0]['id'] ?>">
+
+                <input class="form-control" type="hidden" name="id" value="<?= $kqone[0]['id'] ?>">
             </div>
             <div class="col me-2">
-               
+
                 <input class="btn btn-outline-dark" type="submit" name="capnhat" value="Cập nhật">
             </div>
         </form>
         <br>
-        <table class="table table-dark  table-striped  w-100"  style="text-align: center; font-size:20px;">
+        <table class="table table-dark  table-striped  w-100" style="text-align: center; font-size:20px;">
             <tr>
                 <th>STT</th>
                 <th>Tên danh mục</th>
                 <th>Hình</th>
-             
                 <th>Hành động</th>
             </tr>
             <?php
