@@ -122,7 +122,7 @@
                           </tr>
                           <tr>
                             <td>Phương thức thanh toán <br>
-                              <input type="radio" name="pttt" value="1">Thanh toán khi nhận hàng<br>
+                              <input type="radio" name="pttt" value="1" checked>Thanh toán khi nhận hàng<br>
                               <input type="radio" name="pttt" value="2">Thanh toán chuyển khoản<br>
                               <input type="radio" name="pttt" value="3">Thanh toán ví MoMo<br>
                               <input type="radio" name="pttt" value="4">Thanh toán Online<br>
