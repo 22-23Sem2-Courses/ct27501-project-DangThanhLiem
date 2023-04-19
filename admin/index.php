@@ -56,13 +56,13 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 1) {
                 }
                 include "view/updatedmform.php";
                 break;
-            case 'danhmuc_update':
+           case 'danhmuc_update':
                 if (isset($_POST['capnhat']) && ($_POST['capnhat']) > 0) {
                     $id = $_POST['id'];
                     $tendm = $_POST['tendm'];
                     $target_dir = "../uploaded/dm/";
-                    $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
-                    $img = $_FILES["hinh"]["name"];
+                    $target_file = $target_dir . basename($_FILES["img"]["name"]);
+                    $img = $_FILES["img"]["name"];
                     $uploadOK = 1;
                     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
                     if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif") {
@@ -70,7 +70,7 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 1) {
                         $uploadOK = 0;
                     }
                     if ($uploadOK == 1) {
-                        move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file);
+                        move_uploaded_file($_FILES["img"]["tmp_name"], $target_file);
                     } else {
                         $img = "";
                     }
